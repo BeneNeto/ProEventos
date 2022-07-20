@@ -48,7 +48,7 @@ namespace Proeventos.APi.Controllers
          }
          
          [HttpGet("{ID}")]
-        public IEnumerable<Evento> Get(int ID)
+         public IEnumerable<Evento> Get(int ID)
          {
            return _Evento.Where(Evento => Evento.EventoID == ID);
          }
